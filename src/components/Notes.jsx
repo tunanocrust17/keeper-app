@@ -1,14 +1,11 @@
-import { useState } from "react"
-
-function Notes() {
-    const [item, setItem] = useState("test")
+function Note({title, content}) {
 
     return(
         <div className="note">
-            <h1>Title</h1>
-            <p>{item}</p>
+            <h1>{title}</h1>
+            <p>{content}</p>
         </div>
     )
 }
 
-export default Notes
+export default Note
